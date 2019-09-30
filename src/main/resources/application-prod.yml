@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:postgresql://ec2-46-137-188-105.eu-west-1.compute.amazonaws.com:5432/dhb0ln39ohlc0
+    username: qrvjrmtrytdbvn
+    password: 23b5343225b79e7352d17f25d7c9972708d6cfdab2b750929e39fd58f8e6ac40
+    name: dhb0ln39ohlc0
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+telegram:
+  api_token: "984882244:AAEqU15cSsaxlXq2ejKCbrZfqY02W-39UNQ"
+  chat_id: "@CleaningSchedule"

@@ -1,0 +1,24 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    url: "jdbc:h2:file:./schedule.db"
+    driverClassName: "org.h2.Driver"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: "org.hibernate.dialect.H2Dialect"
+
+  h2:
+    console:
+      enabled: true
+
+  resources:
+    chain:
+      cache: false
+
+telegram:
+  api_token: "984882244:AAEqU15cSsaxlXq2ejKCbrZfqY02W-39UNQ"
+  chat_id: "@CleaningSchedule"
